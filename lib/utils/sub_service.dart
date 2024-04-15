@@ -4,7 +4,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SubService extends StatelessWidget {
-  const SubService({super.key});
+  final String ImagePath;
+  final String title;
+  final String description;
+  const SubService(
+      {super.key,
+      required this.ImagePath,
+      required this.title,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +22,58 @@ class SubService extends StatelessWidget {
             showDialog(
               context: context,
               builder: (context) => AlertDialog(
-                title: Text("Whatsybot"),
-                content: Text("This alert box is for whatsybot service"),
+                backgroundColor: Colors.white,
+                title: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.asset(ImagePath),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(title)
+                  ],
+                ),
+                content: Container(
+                  height: 300,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        description,
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Container(
+                        width: 150,
+                        height: 70,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.deepPurple,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Incentives',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                '10% per lead',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             );
           },

@@ -84,10 +84,30 @@ class _ServiceTileState extends State<ServiceTile> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SubService(),
-                            SubService(),
-                            SubService(),
-                            SubService(),
+                            SubService(
+                              ImagePath: 'lib/Images/Whatsybot.png',
+                              title: 'Whatsybot',
+                              description:
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium quam. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Etiam erat velit scelerisque in dictum. Magna fringilla urna porttitor rhoncus dolor purus. Arcu non sodales neque sodales ut ',
+                            ),
+                            SubService(
+                              ImagePath: 'lib/Images/Whatsybot.png',
+                              title: 'Salesforce',
+                              description:
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium quam. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Etiam erat velit scelerisque in dictum. Magna fringilla urna porttitor rhoncus dolor purus. Arcu non sodales neque sodales ut ',
+                            ),
+                            SubService(
+                              ImagePath: 'lib/Images/Whatsybot.png',
+                              title: 'WordPress',
+                              description:
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium quam. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Etiam erat velit scelerisque in dictum. Magna fringilla urna porttitor rhoncus dolor purus. Arcu non sodales neque sodales ut ',
+                            ),
+                            SubService(
+                              ImagePath: 'lib/Images/Whatsybot.png',
+                              title: 'UI/UX',
+                              description:
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed sed risus pretium quam. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Etiam erat velit scelerisque in dictum. Magna fringilla urna porttitor rhoncus dolor purus. Arcu non sodales neque sodales ut ',
+                            ),
                           ],
                         ),
                       ),
