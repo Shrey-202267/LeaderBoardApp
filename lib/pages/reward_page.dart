@@ -126,7 +126,7 @@ class RewardPage extends StatelessWidget {
                     ),
                     RewardCard(
                       imagePath: 'lib/Images/item4.png',
-                      itemName: 'Comedy Tickets',
+                      itemName: 'Comedy Funny Tickets',
                       leads: '40',
                     ),
                     RewardCard(
